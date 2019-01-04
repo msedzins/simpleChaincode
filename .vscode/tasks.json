@@ -9,16 +9,13 @@
             "command": "go install ${file}",
             "options": {
                 "env": {
-                    "GOBIN": "${workspaceFolder}/bin"
+                    "GOBIN": "${fileDirname}/bin"
                 }
             },
             "problemMatcher": [
                 "$go"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         },
         {
             "label": "test",
